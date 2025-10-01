@@ -1,12 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Heart, Award } from "lucide-react";
+import heroAbout from "@/assets/hero-about.jpg";
 
 const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative text-primary-foreground py-20 bg-cover bg-center" style={{ backgroundImage: `url(${heroAbout})` }}>
+        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About RecrutPro</h1>
             <p className="text-xl opacity-90">

@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Building2, Users, Zap } from "lucide-react";
+import heroEmployers from "@/assets/hero-employers.jpg";
 
 const Employers = () => {
   const [formData, setFormData] = useState({
@@ -40,8 +41,9 @@ const Employers = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative text-primary-foreground py-20 bg-cover bg-center" style={{ backgroundImage: `url(${heroEmployers})` }}>
+        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Hire Top Talent</h1>
             <p className="text-xl opacity-90">

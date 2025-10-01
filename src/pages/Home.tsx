@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Building2, TrendingUp, Shield } from "lucide-react";
+import heroHome from "@/assets/hero-home.jpg";
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-primary/80 text-primary-foreground py-20 md:py-32">
-        <div className="container mx-auto px-4">
+      <section className="relative text-primary-foreground py-20 md:py-32 bg-cover bg-center" style={{ backgroundImage: `url(${heroHome})` }}>
+        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Connecting Talent with Leading Companies
