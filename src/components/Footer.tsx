@@ -59,8 +59,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Media */}
-          <div>
+          {/* Social Media - Disabled for now */}
+          {/* <div>
             <h3 className="font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a
@@ -92,7 +92,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
