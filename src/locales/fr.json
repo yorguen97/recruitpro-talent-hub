@@ -1,0 +1,205 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "services": "Services",
+        "jobSeekers": "Candidats",
+        "employers": "Employeurs",
+        "contact": "Contact"
+    },
+    "home": {
+        "hero": {
+            "title": "Connecter les Talents aux Entreprises Leaders",
+            "subtitle": "Votre partenaire de confiance pour trouver la correspondance parfaite entre des talents exceptionnels et des opportunités remarquables",
+            "findJob": "Trouver un Emploi",
+            "postJob": "Publier un Emploi"
+        },
+        "features": {
+            "title": "Pourquoi Choisir RecrutPro ?",
+            "subtitle": "Nous offrons des solutions de recrutement exceptionnelles adaptées à vos besoins",
+            "talentNetwork": {
+                "title": "Réseau de Talents d'Élite",
+                "description": "Accès à un vaste réseau de professionnels qualifiés et présélectionnés"
+            },
+            "companies": {
+                "title": "Entreprises Leaders",
+                "description": "Partenariats avec des organisations leaders dans tous les secteurs"
+            },
+            "careerGrowth": {
+                "title": "Croissance de Carrière",
+                "description": "Opportunités qui correspondent à vos aspirations et objectifs professionnels"
+            },
+            "trustedProcess": {
+                "title": "Processus de Confiance",
+                "description": "Processus de recrutement sécurisé, transparent avec un accompagnement personnalisé"
+            }
+        },
+        "cta": {
+            "title": "Prêt à Commencer ?",
+            "subtitle": "Que vous recherchiez votre prochaine opportunité de carrière ou que vous souhaitiez embaucher des talents exceptionnels, nous sommes là pour vous aider",
+            "contactUs": "Contactez-Nous Aujourd'hui"
+        }
+    },
+    "about": {
+        "hero": {
+            "title": "À Propos de RecrutPro",
+            "subtitle": "Nous nous consacrons à créer des connexions significatives entre des talents exceptionnels et des entreprises visionnaires"
+        },
+        "mission": {
+            "title": "Notre Mission",
+            "description": "Combler l'écart entre les talents et les opportunités, en créant des relations professionnelles durables"
+        },
+        "values": {
+            "title": "Nos Valeurs",
+            "description": "Intégrité, excellence et engagement envers les candidats et les clients"
+        },
+        "approach": {
+            "title": "Notre Approche",
+            "description": "Service personnalisé avec une expertise sectorielle approfondie et des insights du marché"
+        },
+        "content": {
+            "title": "Qui Nous Sommes",
+            "paragraph1": "RecrutPro est une agence de recrutement dynamique, créée pour connecter des talents prometteurs avec des entreprises ambitieuses, dans divers secteurs. Notre mission est d'accompagner les entreprises dans la construction d'équipes solides, tout en aidant les professionnels à trouver des opportunités alignées avec leurs objectifs de carrière.",
+            "paragraph2": "Notre équipe est composée de passionnés du recrutement et des ressources humaines, engagés à offrir un service personnalisé et de qualité. Nous prenons le temps de comprendre les besoins spécifiques de chaque entreprise et les aspirations de chaque candidat. Pour nous, un bon recrutement va au-delà des compétences : il repose sur l'adéquation humaine, culturelle et professionnelle.",
+            "paragraph3": "Que vous soyez en recherche d’emploi ou à la recherche du bon profil pour renforcer votre équipe, RecrutPro vous accompagne à chaque étape avec sérieux, réactivité et transparence. Notre approche humaine et notre engagement font de nous un partenaire de confiance pour vos projets de recrutement."
+        }
+    },
+    "services": {
+        "hero": {
+            "title": "Nos Services",
+            "subtitle": "Solutions de recrutement complètes adaptées à vos besoins"
+        },
+        "jobSeekers": {
+            "title": "Pour les Candidats",
+            "subtitle": "Nous nous engageons à vous aider à trouver votre opportunité de carrière parfaite",
+            "jobSearch": {
+                "title": "Assistance à la Recherche d'Emploi",
+                "description": "Accédez à notre vaste base de données d'opportunités dans divers secteurs et niveaux d'expérience"
+            },
+            "resumeReview": {
+                "title": "Révision de CV",
+                "description": "Révision et optimisation professionnelle de CV pour vous aider à vous démarquer auprès des employeurs"
+            },
+            "careerGuidance": {
+                "title": "Conseil de Carrière",
+                "description": "Conseil de carrière personnalisé pour vous aider à atteindre vos objectifs professionnels"
+            }
+        },
+        "employers": {
+            "title": "Pour les Employeurs",
+            "subtitle": "Solutions de recrutement stratégiques pour construire votre équipe de rêve",
+            "talentSourcing": {
+                "title": "Sourcing de Talents",
+                "description": "Identification proactive et engagement de candidats qualifiés pour vos besoins spécifiques"
+            },
+            "candidateScreening": {
+                "title": "Sélection de Candidats",
+                "description": "Évaluation et vérification approfondies des candidats pour assurer la correspondance parfaite"
+            },
+            "recruitmentStrategy": {
+                "title": "Stratégie de Recrutement",
+                "description": "Stratégies de recrutement personnalisées alignées avec vos objectifs commerciaux et votre culture"
+            }
+        }
+    },
+    "employers": {
+        "hero": {
+            "title": "Embaucher des Talents d'Élite",
+            "subtitle": "Connectez-vous avec des professionnels qualifiés qui feront progresser votre entreprise"
+        },
+        "benefits": {
+            "title": "Pourquoi Partenariat Avec Nous ?",
+            "subtitle": "Nous rationalisons votre processus d'embauche et livrons des candidats de qualité",
+            "industryExpertise": {
+                "title": "Expertise Sectorielle",
+                "description": "Compréhension approfondie de votre secteur et de vos besoins d'embauche spécifiques"
+            },
+            "qualityCandidates": {
+                "title": "Candidats de Qualité",
+                "description": "Professionnels présélectionnés qui correspondent à vos exigences"
+            },
+            "fastTurnaround": {
+                "title": "Délai Rapide",
+                "description": "Processus efficace qui vous fait gagner du temps et des ressources"
+            }
+        },
+        "form": {
+            "title": "Demander des Talents",
+            "subtitle": "Remplissez le formulaire ci-dessous et nous commencerons à trouver les candidats parfaits pour vos besoins",
+            "companyName": "Nom de l'Entreprise",
+            "contactName": "Nom du Contact",
+            "email": "Email",
+            "phone": "Téléphone",
+            "position": "Titre du Poste",
+            "requirements": "Exigences du Poste",
+            "requirementsPlaceholder": "Décrivez le rôle, les compétences requises, le niveau d'expérience, etc.",
+            "submit": "Soumettre la Demande",
+            "successMessage": "Votre demande a été soumise ! Nous vous contacterons bientôt."
+        }
+    },
+    "contact": {
+        "hero": {
+            "title": "Contacter nous",
+            "subtitle": "Nous sommes là pour vous aider. Contactez-nous pour toute question ou demande"
+        },
+        "form": {
+            "title": "Envoyez-nous un Message",
+            "subtitle": "Remplissez le formulaire et nous vous répondrons dans les 24 heures",
+            "name": "Nom",
+            "email": "Email",
+            "subject": "Sujet",
+            "message": "Message",
+            "submit": "Envoyer le Message",
+            "successMessage": "Message envoyé avec succès ! Nous vous répondrons bientôt."
+        },
+        "info": {
+            "title": "Informations de Contact",
+            "email": "Email",
+            "phone": "Téléphone",
+            "office": "Bureau",
+            "hours": "Lun-Ven : 9h - 18h EST"
+        }
+    },
+    "jobSeekers": {
+        "hero": {
+            "title": "Trouvez Votre Emploi de Rêve",
+            "subtitle": "Explorez des milliers d'opportunités d'entreprises leaders"
+        },
+        "search": {
+            "title": "Recherche d'Emploi",
+            "subtitle": "Filtrez les emplois par titre, entreprise, type et localisation",
+            "keywords": "Mots-clés",
+            "keywordsPlaceholder": "Titre de poste ou entreprise",
+            "jobType": "Type d'Emploi",
+            "location": "Localisation",
+            "allTypes": "Tous Types",
+            "allLocations": "Toutes Localisations",
+            "fullTime": "Temps Plein",
+            "partTime": "Temps Partiel",
+            "contract": "Contrat",
+            "remote": "Télétravail",
+            "newYork": "New York",
+            "sanFrancisco": "San Francisco",
+            "losAngeles": "Los Angeles"
+        },
+        "listings": {
+            "title": "Emplois Trouvés",
+            "applyNow": "Postuler Maintenant",
+            "successMessage": "Candidature soumise pour"
+        }
+    },
+    "footer": {
+        "tagline": "Connecter les talents aux entreprises leaders. Autonomiser le succès.",
+        "quickLinks": "Liens Rapides",
+        "legal": "Légal",
+        "privacyPolicy": "Politique de Confidentialité",
+        "termsOfService": "Conditions d'Utilisation",
+        "copyright": "Tous droits réservés."
+    },
+    "common": {
+        "required": "*",
+        "loading": "Chargement...",
+        "error": "Une erreur s'est produite",
+        "success": "Succès"
+    }
+}

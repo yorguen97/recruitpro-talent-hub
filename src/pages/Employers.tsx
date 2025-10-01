@@ -6,9 +6,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Building2, Users, Zap } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroEmployers from "@/assets/hero-employers.jpg";
 
 const Employers = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     companyName: "",
     contactName: "",
@@ -20,7 +22,7 @@ const Employers = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Your request has been submitted! We'll contact you soon.");
+    toast.success(t("employers.form.successMessage"));
     setFormData({
       companyName: "",
       contactName: "",
@@ -45,9 +47,9 @@ const Employers = () => {
         <div className="absolute inset-0 bg-primary/70"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Hire Top Talent</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("employers.hero.title")}</h1>
             <p className="text-xl opacity-90">
-              Connect with qualified professionals who will drive your business forward
+              {t("employers.hero.subtitle")}
             </p>
           </div>
         </div>
@@ -58,9 +60,9 @@ const Employers = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Partner With Us?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("employers.benefits.title")}</h2>
               <p className="text-lg text-muted-foreground">
-                We streamline your hiring process and deliver quality candidates
+                {t("employers.benefits.subtitle")}
               </p>
             </div>
 
@@ -70,9 +72,9 @@ const Employers = () => {
                   <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Building2 className="h-8 w-8 text-accent" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Industry Expertise</h3>
+                  <h3 className="text-xl font-bold mb-2">{t("employers.benefits.industryExpertise.title")}</h3>
                   <p className="text-muted-foreground">
-                    Deep understanding of your sector and specific hiring needs
+                    {t("employers.benefits.industryExpertise.description")}
                   </p>
                 </CardContent>
               </Card>
@@ -82,9 +84,9 @@ const Employers = () => {
                   <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="h-8 w-8 text-accent" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Quality Candidates</h3>
+                  <h3 className="text-xl font-bold mb-2">{t("employers.benefits.qualityCandidates.title")}</h3>
                   <p className="text-muted-foreground">
-                    Pre-screened professionals who match your requirements
+                    {t("employers.benefits.qualityCandidates.description")}
                   </p>
                 </CardContent>
               </Card>
@@ -94,9 +96,9 @@ const Employers = () => {
                   <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Zap className="h-8 w-8 text-accent" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Fast Turnaround</h3>
+                  <h3 className="text-xl font-bold mb-2">{t("employers.benefits.fastTurnaround.title")}</h3>
                   <p className="text-muted-foreground">
-                    Efficient process that saves you time and resources
+                    {t("employers.benefits.fastTurnaround.description")}
                   </p>
                 </CardContent>
               </Card>
@@ -111,16 +113,16 @@ const Employers = () => {
           <div className="max-w-2xl mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle>Request Talent</CardTitle>
+                <CardTitle>{t("employers.form.title")}</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll start finding the perfect candidates for your needs
+                  {t("employers.form.subtitle")}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="companyName">Company Name *</Label>
+                      <Label htmlFor="companyName">{t("employers.form.companyName")} {t("common.required")}</Label>
                       <Input
                         id="companyName"
                         name="companyName"
@@ -130,7 +132,7 @@ const Employers = () => {
                       />
                     </div>
                     <div>
-                      <Label htmlFor="contactName">Contact Name *</Label>
+                      <Label htmlFor="contactName">{t("employers.form.contactName")} {t("common.required")}</Label>
                       <Input
                         id="contactName"
                         name="contactName"
@@ -143,7 +145,7 @@ const Employers = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="email">Email *</Label>
+                      <Label htmlFor="email">{t("employers.form.email")} {t("common.required")}</Label>
                       <Input
                         id="email"
                         name="email"
@@ -154,7 +156,7 @@ const Employers = () => {
                       />
                     </div>
                     <div>
-                      <Label htmlFor="phone">Phone</Label>
+                      <Label htmlFor="phone">{t("employers.form.phone")}</Label>
                       <Input
                         id="phone"
                         name="phone"
@@ -166,7 +168,7 @@ const Employers = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="position">Position Title *</Label>
+                    <Label htmlFor="position">{t("employers.form.position")} {t("common.required")}</Label>
                     <Input
                       id="position"
                       name="position"
@@ -177,20 +179,20 @@ const Employers = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="requirements">Job Requirements *</Label>
+                    <Label htmlFor="requirements">{t("employers.form.requirements")} {t("common.required")}</Label>
                     <Textarea
                       id="requirements"
                       name="requirements"
                       value={formData.requirements}
                       onChange={handleChange}
                       rows={5}
-                      placeholder="Describe the role, required skills, experience level, etc."
+                      placeholder={t("employers.form.requirementsPlaceholder")}
                       required
                     />
                   </div>
 
                   <Button type="submit" variant="success" size="lg" className="w-full">
-                    Submit Request
+                    {t("employers.form.submit")}
                   </Button>
                 </form>
               </CardContent>

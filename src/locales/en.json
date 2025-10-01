@@ -1,0 +1,205 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "jobSeekers": "Job Seekers",
+        "employers": "Employers",
+        "contact": "Contact"
+    },
+    "home": {
+        "hero": {
+            "title": "Connecting Talent with Leading Companies",
+            "subtitle": "Your trusted partner in finding the perfect match between exceptional talent and outstanding opportunities",
+            "findJob": "Find a Job",
+            "postJob": "Post a Job"
+        },
+        "features": {
+            "title": "Why Choose RecrutPro?",
+            "subtitle": "We deliver exceptional recruitment solutions tailored to your needs",
+            "talentNetwork": {
+                "title": "Top Talent Network",
+                "description": "Access to a vast network of pre-screened, qualified professionals"
+            },
+            "companies": {
+                "title": "Leading Companies",
+                "description": "Partnerships with industry-leading organizations across sectors"
+            },
+            "careerGrowth": {
+                "title": "Career Growth",
+                "description": "Opportunities that align with your career aspirations and goals"
+            },
+            "trustedProcess": {
+                "title": "Trusted Process",
+                "description": "Secure, transparent recruitment process with personalized support"
+            }
+        },
+        "cta": {
+            "title": "Ready to Get Started?",
+            "subtitle": "Whether you're seeking your next career opportunity or looking to hire exceptional talent, we're here to help",
+            "contactUs": "Contact Us Today"
+        }
+    },
+    "about": {
+        "hero": {
+            "title": "About RecrutPro",
+            "subtitle": "We're dedicated to creating meaningful connections between exceptional talent and forward-thinking companies"
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "To bridge the gap between talent and opportunity, creating lasting professional relationships"
+        },
+        "values": {
+            "title": "Our Values",
+            "description": "Integrity, excellence, and commitment to both candidates and clients"
+        },
+        "approach": {
+            "title": "Our Approach",
+            "description": "Personalized service with deep industry expertise and market insights"
+        },
+        "content": {
+            "title": "Who We Are",
+            "paragraph1": "RecrutPro is a dynamic recruitment agency, created to connect promising talent with ambitious companies across various industries. Our mission is to support businesses in building strong teams, while helping professionals find opportunities that align with their career goals.",
+            "paragraph2": "Our team is made up of passionate recruitment and HR professionals, committed to delivering a personalized and high-quality service. We take the time to understand the specific needs of each company and the aspirations of every candidate. For us, successful recruitment goes beyond skills—it's about the right human, cultural, and professional fit.",
+            "paragraph3": "Whether you’re looking for a new job or searching for the right talent to grow your team, RecrutPro is here to support you every step of the way with professionalism, responsiveness, and transparency. Our human approach and strong commitment make us a trusted partner for all your recruitment needs."
+        }
+    },
+    "services": {
+        "hero": {
+            "title": "Our Services",
+            "subtitle": "Comprehensive recruitment solutions tailored to your needs"
+        },
+        "jobSeekers": {
+            "title": "For Job Seekers",
+            "subtitle": "We're committed to helping you find your perfect career opportunity",
+            "jobSearch": {
+                "title": "Job Search Assistance",
+                "description": "Access our extensive database of opportunities across various industries and experience levels"
+            },
+            "resumeReview": {
+                "title": "Resume Review",
+                "description": "Professional resume review and optimization to help you stand out to employers"
+            },
+            "careerGuidance": {
+                "title": "Career Guidance",
+                "description": "Personalized career counseling to help you achieve your professional goals"
+            }
+        },
+        "employers": {
+            "title": "For Employers",
+            "subtitle": "Strategic recruitment solutions to build your dream team",
+            "talentSourcing": {
+                "title": "Talent Sourcing",
+                "description": "Proactive identification and engagement of qualified candidates for your specific needs"
+            },
+            "candidateScreening": {
+                "title": "Candidate Screening",
+                "description": "Thorough evaluation and verification of candidates to ensure the perfect fit"
+            },
+            "recruitmentStrategy": {
+                "title": "Recruitment Strategy",
+                "description": "Customized recruitment strategies aligned with your business objectives and culture"
+            }
+        }
+    },
+    "employers": {
+        "hero": {
+            "title": "Hire Top Talent",
+            "subtitle": "Connect with qualified professionals who will drive your business forward"
+        },
+        "benefits": {
+            "title": "Why Partner With Us?",
+            "subtitle": "We streamline your hiring process and deliver quality candidates",
+            "industryExpertise": {
+                "title": "Industry Expertise",
+                "description": "Deep understanding of your sector and specific hiring needs"
+            },
+            "qualityCandidates": {
+                "title": "Quality Candidates",
+                "description": "Pre-screened professionals who match your requirements"
+            },
+            "fastTurnaround": {
+                "title": "Fast Turnaround",
+                "description": "Efficient process that saves you time and resources"
+            }
+        },
+        "form": {
+            "title": "Request Talent",
+            "subtitle": "Fill out the form below and we'll start finding the perfect candidates for your needs",
+            "companyName": "Company Name",
+            "contactName": "Contact Name",
+            "email": "Email",
+            "phone": "Phone",
+            "position": "Position Title",
+            "requirements": "Job Requirements",
+            "requirementsPlaceholder": "Describe the role, required skills, experience level, etc.",
+            "submit": "Submit Request",
+            "successMessage": "Your request has been submitted! We'll contact you soon."
+        }
+    },
+    "contact": {
+        "hero": {
+            "title": "Get In Touch",
+            "subtitle": "We're here to help. Reach out to us for any questions or inquiries"
+        },
+        "form": {
+            "title": "Send Us a Message",
+            "subtitle": "Fill out the form and we'll get back to you within 24 hours",
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "submit": "Send Message",
+            "successMessage": "Message sent successfully! We'll get back to you soon."
+        },
+        "info": {
+            "title": "Contact Information",
+            "email": "Email",
+            "phone": "Phone",
+            "office": "Office",
+            "hours": "Mon-Fri: 9AM - 6PM EST"
+        }
+    },
+    "jobSeekers": {
+        "hero": {
+            "title": "Find Your Dream Job",
+            "subtitle": "Explore thousands of opportunities from leading companies"
+        },
+        "search": {
+            "title": "Job Search",
+            "subtitle": "Filter jobs by title, company, type, and location",
+            "keywords": "Keywords",
+            "keywordsPlaceholder": "Job title or company",
+            "jobType": "Job Type",
+            "location": "Location",
+            "allTypes": "All Types",
+            "allLocations": "All Locations",
+            "fullTime": "Full-time",
+            "partTime": "Part-time",
+            "contract": "Contract",
+            "remote": "Remote",
+            "newYork": "New York",
+            "sanFrancisco": "San Francisco",
+            "losAngeles": "Los Angeles"
+        },
+        "listings": {
+            "title": "Jobs Found",
+            "applyNow": "Apply Now",
+            "successMessage": "Application submitted for"
+        }
+    },
+    "footer": {
+        "tagline": "Connecting talent with leading companies. Empowering success.",
+        "quickLinks": "Quick Links",
+        "legal": "Legal",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "copyright": "All rights reserved."
+    },
+    "common": {
+        "required": "*",
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "success": "Success"
+    }
+}

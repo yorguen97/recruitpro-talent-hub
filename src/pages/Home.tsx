@@ -2,9 +2,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Building2, TrendingUp, Shield } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroHome from "@/assets/hero-home.jpg";
 
 const Home = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -13,20 +16,15 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Connecting Talent with Leading Companies
+              {t("home.hero.title")}
             </h1>
             <p className="text-xl md:text-2xl opacity-90">
-              Your trusted partner in finding the perfect match between exceptional talent and outstanding opportunities
+              {t("home.hero.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link to="/job-seekers">
-                <Button variant="hero" size="lg" className="w-full sm:w-auto">
-                  Find a Job
-                </Button>
-              </Link>
               <Link to="/employers">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto bg-background text-foreground hover:bg-background/90">
-                  Post a Job
+                <Button variant="hero" size="lg" className="w-full sm:w-auto">
+                  {t("home.hero.postJob")}
                 </Button>
               </Link>
             </div>
@@ -38,9 +36,9 @@ const Home = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose RecrutPro?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("home.features.title")}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We deliver exceptional recruitment solutions tailored to your needs
+              {t("home.features.subtitle")}
             </p>
           </div>
 
@@ -50,9 +48,9 @@ const Home = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Top Talent Network</h3>
+                <h3 className="text-xl font-semibold mb-2">{t("home.features.talentNetwork.title")}</h3>
                 <p className="text-muted-foreground">
-                  Access to a vast network of pre-screened, qualified professionals
+                  {t("home.features.talentNetwork.description")}
                 </p>
               </CardContent>
             </Card>
@@ -62,9 +60,9 @@ const Home = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Building2 className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Leading Companies</h3>
+                <h3 className="text-xl font-semibold mb-2">{t("home.features.companies.title")}</h3>
                 <p className="text-muted-foreground">
-                  Partnerships with industry-leading organizations across sectors
+                  {t("home.features.companies.description")}
                 </p>
               </CardContent>
             </Card>
@@ -74,9 +72,9 @@ const Home = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <TrendingUp className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Career Growth</h3>
+                <h3 className="text-xl font-semibold mb-2">{t("home.features.careerGrowth.title")}</h3>
                 <p className="text-muted-foreground">
-                  Opportunities that align with your career aspirations and goals
+                  {t("home.features.careerGrowth.description")}
                 </p>
               </CardContent>
             </Card>
@@ -86,9 +84,9 @@ const Home = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Trusted Process</h3>
+                <h3 className="text-xl font-semibold mb-2">{t("home.features.trustedProcess.title")}</h3>
                 <p className="text-muted-foreground">
-                  Secure, transparent recruitment process with personalized support
+                  {t("home.features.trustedProcess.description")}
                 </p>
               </CardContent>
             </Card>
@@ -100,14 +98,14 @@ const Home = () => {
       <section className="bg-secondary py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">Ready to Get Started?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">{t("home.cta.title")}</h2>
             <p className="text-lg text-muted-foreground">
-              Whether you're seeking your next career opportunity or looking to hire exceptional talent, we're here to help
+              {t("home.cta.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
                 <Button variant="success" size="lg" className="w-full sm:w-auto">
-                  Contact Us Today
+                  {t("home.cta.contactUs")}
                 </Button>
               </Link>
             </div>

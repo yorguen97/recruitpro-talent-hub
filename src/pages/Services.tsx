@@ -1,8 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Briefcase, UserSearch, FileText, Users, Target, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroServices from "@/assets/hero-services.jpg";
 
 const Services = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -10,9 +13,9 @@ const Services = () => {
         <div className="absolute inset-0 bg-primary/70"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("services.hero.title")}</h1>
             <p className="text-xl opacity-90">
-              Comprehensive recruitment solutions tailored to your needs
+              {t("services.hero.subtitle")}
             </p>
           </div>
         </div>
@@ -23,9 +26,9 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">For Job Seekers</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("services.jobSeekers.title")}</h2>
               <p className="text-lg text-muted-foreground">
-                We're committed to helping you find your perfect career opportunity
+                {t("services.jobSeekers.subtitle")}
               </p>
             </div>
 
@@ -35,9 +38,9 @@ const Services = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
                     <Briefcase className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Job Search Assistance</CardTitle>
+                  <CardTitle>{t("services.jobSeekers.jobSearch.title")}</CardTitle>
                   <CardDescription>
-                    Access our extensive database of opportunities across various industries and experience levels
+                    {t("services.jobSeekers.jobSearch.description")}
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -47,9 +50,9 @@ const Services = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
                     <FileText className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Resume Review</CardTitle>
+                  <CardTitle>{t("services.jobSeekers.resumeReview.title")}</CardTitle>
                   <CardDescription>
-                    Professional resume review and optimization to help you stand out to employers
+                    {t("services.jobSeekers.resumeReview.description")}
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -59,9 +62,9 @@ const Services = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
                     <Target className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Career Guidance</CardTitle>
+                  <CardTitle>{t("services.jobSeekers.careerGuidance.title")}</CardTitle>
                   <CardDescription>
-                    Personalized career counseling to help you achieve your professional goals
+                    {t("services.jobSeekers.careerGuidance.description")}
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -69,9 +72,9 @@ const Services = () => {
 
             {/* Services for Employers */}
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">For Employers</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("services.employers.title")}</h2>
               <p className="text-lg text-muted-foreground">
-                Strategic recruitment solutions to build your dream team
+                {t("services.employers.subtitle")}
               </p>
             </div>
 
@@ -81,9 +84,9 @@ const Services = () => {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-2">
                     <UserSearch className="h-6 w-6 text-accent" />
                   </div>
-                  <CardTitle>Talent Sourcing</CardTitle>
+                  <CardTitle>{t("services.employers.talentSourcing.title")}</CardTitle>
                   <CardDescription>
-                    Proactive identification and engagement of qualified candidates for your specific needs
+                    {t("services.employers.talentSourcing.description")}
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -93,9 +96,9 @@ const Services = () => {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-2">
                     <Users className="h-6 w-6 text-accent" />
                   </div>
-                  <CardTitle>Candidate Screening</CardTitle>
+                  <CardTitle>{t("services.employers.candidateScreening.title")}</CardTitle>
                   <CardDescription>
-                    Thorough evaluation and verification of candidates to ensure the perfect fit
+                    {t("services.employers.candidateScreening.description")}
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -105,9 +108,9 @@ const Services = () => {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-2">
                     <TrendingUp className="h-6 w-6 text-accent" />
                   </div>
-                  <CardTitle>Recruitment Strategy</CardTitle>
+                  <CardTitle>{t("services.employers.recruitmentStrategy.title")}</CardTitle>
                   <CardDescription>
-                    Customized recruitment strategies aligned with your business objectives and culture
+                    {t("services.employers.recruitmentStrategy.description")}
                   </CardDescription>
                 </CardHeader>
               </Card>

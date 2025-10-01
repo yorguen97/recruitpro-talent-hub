@@ -1,103 +1,54 @@
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-card border-t border-border mt-20">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="flex flex-col items-center text-center space-y-8 max-w-4xl mx-auto">
           {/* Brand */}
           <div className="space-y-4">
-            <img src={logo} alt="RecrutPro Logo" className="h-16 w-auto" />
+            <img src={logo} alt="RecrutPro Logo" className="h-16 w-auto mx-auto" />
             <p className="text-sm text-muted-foreground">
-              Connecting talent with leading companies. Empowering success.
+              {t("footer.tagline")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="font-semibold mb-4">{t("footer.quickLinks")}</h3>
+            <ul className="flex flex-wrap justify-center gap-6">
               <li>
                 <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  About Us
+                  {t("nav.about")}
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/job-seekers" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Job Seekers
+                  {t("nav.services")}
                 </Link>
               </li>
               <li>
                 <Link to="/employers" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Employers
+                  {t("nav.employers")}
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  {t("nav.contact")}
                 </Link>
               </li>
             </ul>
           </div>
-
-          {/* Legal */}
-          <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Terms of Service
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Social Media - Disabled for now */}
-          {/* <div>
-            <h3 className="font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
-          </div> */}
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} RecrutPro. All rights reserved.
+            © {new Date().getFullYear()} RecrutPro. {t("footer.copyright")}
           </p>
         </div>
       </div>

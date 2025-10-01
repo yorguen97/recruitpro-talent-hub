@@ -1,8 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Heart, Award } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroAbout from "@/assets/hero-about.jpg";
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -10,9 +13,9 @@ const About = () => {
         <div className="absolute inset-0 bg-primary/70"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About RecrutPro</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("about.hero.title")}</h1>
             <p className="text-xl opacity-90">
-              We're dedicated to creating meaningful connections between exceptional talent and forward-thinking companies
+              {t("about.hero.subtitle")}
             </p>
           </div>
         </div>
@@ -28,9 +31,9 @@ const About = () => {
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Target className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Our Mission</h3>
+                  <h3 className="text-xl font-bold mb-2">{t("about.mission.title")}</h3>
                   <p className="text-muted-foreground">
-                    To bridge the gap between talent and opportunity, creating lasting professional relationships
+                    {t("about.mission.description")}
                   </p>
                 </CardContent>
               </Card>
@@ -40,9 +43,9 @@ const About = () => {
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Heart className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Our Values</h3>
+                  <h3 className="text-xl font-bold mb-2">{t("about.values.title")}</h3>
                   <p className="text-muted-foreground">
-                    Integrity, excellence, and commitment to both candidates and clients
+                    {t("about.values.description")}
                   </p>
                 </CardContent>
               </Card>
@@ -52,30 +55,24 @@ const About = () => {
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Award className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Our Approach</h3>
+                  <h3 className="text-xl font-bold mb-2">{t("about.approach.title")}</h3>
                   <p className="text-muted-foreground">
-                    Personalized service with deep industry expertise and market insights
+                    {t("about.approach.description")}
                   </p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold mb-6">Who We Are</h2>
+              <h2 className="text-3xl font-bold mb-6">{t("about.content.title")}</h2>
               <p className="text-muted-foreground mb-4">
-                RecrutPro is a leading recruitment agency specializing in connecting top-tier talent with exceptional 
-                companies across various industries. With years of experience in the recruitment sector, we understand 
-                the challenges both job seekers and employers face in today's competitive market.
+                {t("about.content.paragraph1")}
               </p>
               <p className="text-muted-foreground mb-4">
-                Our team of experienced recruitment professionals works tirelessly to understand the unique needs of 
-                each client and candidate. We believe that successful recruitment goes beyond matching skills to job 
-                descriptions—it's about understanding company culture, career aspirations, and long-term goals.
+                {t("about.content.paragraph2")}
               </p>
               <p className="text-muted-foreground">
-                Whether you're a professional seeking your next career move or an organization looking to build your 
-                team, RecrutPro is committed to delivering results that exceed expectations. Our personalized approach, 
-                extensive network, and industry expertise make us your trusted partner in recruitment.
+                {t("about.content.paragraph3")}
               </p>
             </div>
           </div>
