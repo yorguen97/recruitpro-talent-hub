@@ -21,7 +21,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.PROD ? '/recruitpro-talent-hub' : ''}>
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
